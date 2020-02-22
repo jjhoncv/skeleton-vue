@@ -1,0 +1,10 @@
+version: '3'
+services:
+  node:
+    container_name: skeleton-vue
+    image: $IMAGE_DEV
+    volumes:
+      - ./app:/app
+    command: "npm run start"
+    ports:
+      - "8080:8080"
